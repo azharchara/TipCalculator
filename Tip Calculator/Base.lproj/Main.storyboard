@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13156.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OzI-oX-c4p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-R.ttf">
+            <string>Ubuntu</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tip Calculator-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TipViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wka-do-fHU">
+                                <rect key="frame" x="15" y="18" width="101.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77.5" id="OLU-3o-1gY"/>
+                                    <constraint firstAttribute="height" constant="24" id="gXH-vn-drC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vol-kT-Qgp">
+                                <rect key="frame" x="15" y="63" width="43" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2Eg-Yl-hF1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="IFe-ey-a4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-J4-G7B">
+                                <rect key="frame" x="148.5" y="15" width="211.5" height="31"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stX-Qh-9fm">
+                                <rect key="frame" x="154" y="65" width="206" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9M-wN-Api">
+                                <rect key="frame" x="125" y="60" width="23" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="706-7S-PI4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="lLb-c4-btp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8z-VW-rbe">
+                                <rect key="frame" x="126" y="111" width="23" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="Mbz-xm-soG"/>
+                                    <constraint firstAttribute="height" constant="36" id="sjy-8x-ihr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAC-AO-7UE">
+                                <rect key="frame" x="15" y="115" width="63" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="63" id="KNI-Fw-gwc"/>
+                                    <constraint firstAttribute="height" constant="29" id="yYm-zj-blp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gwe-8x-rki">
+                                <rect key="frame" x="154" y="116" width="206" height="27"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYu-Vo-KSb">
+                                <rect key="frame" x="15" y="187" width="69" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="18C-Ir-Zns"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="H9E-8l-F42"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="9iM-zI-NKS">
+                                <rect key="frame" x="124" y="185" width="174" height="31"/>
+                                <color key="tintColor" red="0.59607843137254901" green="0.98431372549019602" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="tipPercentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="M5I-ny-S4a"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txk-vL-sXv">
+                                <rect key="frame" x="15" y="234" width="61" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="9vb-Pk-k2a"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="61" id="Pb7-xB-9ue"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="bhq-2G-5iA">
+                                <rect key="frame" x="124" y="234" width="174" height="31"/>
+                                <color key="tintColor" red="0.59607843140000005" green="0.98431372549999996" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="splitSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Sdw-Bm-x2L"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGB-SH-y9E">
+                                <rect key="frame" x="312" y="236" width="48" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FXu-WA-k4L"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="Y5j-4h-yrU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Split Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSy-l4-axu">
+                                <rect key="frame" x="15" y="285" width="116" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KB1-up-ZvV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-cf-jf3">
+                                <rect key="frame" x="15" y="163" width="345" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="eyd-m7-GGi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-PR-oIT">
+                                <rect key="frame" x="304" y="187" width="65" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="6CY-tq-Myh"/>
+                                    <constraint firstAttribute="height" constant="24" id="nJZ-xi-5qs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-JQ-0s3">
+                                <rect key="frame" x="124.5" y="12" width="23" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="aic-rs-1B5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="beU-JY-rqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMi-dx-zIw">
+                                <rect key="frame" x="167" y="286" width="193" height="27"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-4B-Auh">
+                                <rect key="frame" x="144" y="282" width="23" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="1ha-A0-LHp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="23" id="c4P-0h-NGd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5725490196078431" green="0.32549019607843138" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.53725490196078429" green="0.67850541258169939" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VfG-PR-oIT" firstAttribute="leading" secondItem="9iM-zI-NKS" secondAttribute="trailing" constant="8" id="3mU-nq-xDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGB-SH-y9E" secondAttribute="trailing" constant="15" id="4H1-UP-JbN"/>
+                            <constraint firstItem="JMi-dx-zIw" firstAttribute="top" secondItem="bhq-2G-5iA" secondAttribute="bottom" constant="22" id="5be-Xb-VID"/>
+                            <constraint firstItem="cyz-cf-jf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="5vs-7v-iW5"/>
+                            <constraint firstAttribute="trailing" secondItem="cyz-cf-jf3" secondAttribute="trailing" constant="15" id="7o0-GO-JXL"/>
+                            <constraint firstItem="A3G-J4-G7B" firstAttribute="leading" secondItem="CO7-JQ-0s3" secondAttribute="trailing" constant="1" id="Ccv-wi-QeL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VfG-PR-oIT" secondAttribute="trailing" constant="6" id="Ewn-Ye-hk7"/>
+                            <constraint firstItem="9iM-zI-NKS" firstAttribute="leading" secondItem="oYu-Vo-KSb" secondAttribute="trailing" constant="42" id="Ewo-z3-SPL"/>
+                            <constraint firstAttribute="trailing" secondItem="Q42-4B-Auh" secondAttribute="trailing" constant="208.5" id="HDK-GT-VgU"/>
+                            <constraint firstItem="9iM-zI-NKS" firstAttribute="top" secondItem="cyz-cf-jf3" secondAttribute="bottom" constant="20" id="Jqn-eF-b3c"/>
+                            <constraint firstItem="BSy-l4-axu" firstAttribute="top" secondItem="bhq-2G-5iA" secondAttribute="bottom" constant="21" id="KE3-hx-lnG"/>
+                            <constraint firstItem="Q42-4B-Auh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BSy-l4-axu" secondAttribute="trailing" constant="8" symbolic="YES" id="LJO-QE-6Ij"/>
+                            <constraint firstItem="sGB-SH-y9E" firstAttribute="leading" secondItem="bhq-2G-5iA" secondAttribute="trailing" constant="16" id="Lxd-1A-pyd"/>
+                            <constraint firstItem="cAC-AO-7UE" firstAttribute="top" secondItem="vol-kT-Qgp" secondAttribute="bottom" constant="21" id="N6U-ke-hEl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwe-8x-rki" secondAttribute="trailing" constant="15" id="NXX-ou-aeU"/>
+                            <constraint firstItem="stX-Qh-9fm" firstAttribute="leading" secondItem="L9M-wN-Api" secondAttribute="trailing" constant="6" id="OZB-JN-s5J"/>
+                            <constraint firstItem="JMi-dx-zIw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" priority="950" constant="20" symbolic="YES" id="P8B-Wi-LyY"/>
+                            <constraint firstItem="sGB-SH-y9E" firstAttribute="top" secondItem="VfG-PR-oIT" secondAttribute="bottom" constant="25" id="QCQ-Iv-lWu"/>
+                            <constraint firstItem="Gwe-8x-rki" firstAttribute="top" secondItem="stX-Qh-9fm" secondAttribute="bottom" constant="24" id="RaY-01-w8c"/>
+                            <constraint firstItem="cAC-AO-7UE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="SEA-GR-YKs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="stX-Qh-9fm" secondAttribute="trailing" constant="15" id="SUr-Y0-uos"/>
+                            <constraint firstItem="L9M-wN-Api" firstAttribute="top" secondItem="CO7-JQ-0s3" secondAttribute="bottom" constant="12" id="SyQ-YN-8wx"/>
+                            <constraint firstItem="A3G-J4-G7B" firstAttribute="leading" secondItem="CO7-JQ-0s3" secondAttribute="trailing" constant="1" id="Uoe-Io-Xc8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JMi-dx-zIw" secondAttribute="trailing" constant="15" id="YCs-6f-igZ"/>
+                            <constraint firstItem="Q42-4B-Auh" firstAttribute="top" secondItem="bhq-2G-5iA" secondAttribute="bottom" constant="18" id="ZLM-H5-G5p"/>
+                            <constraint firstItem="sGB-SH-y9E" firstAttribute="leading" secondItem="bhq-2G-5iA" secondAttribute="trailing" constant="16" id="acj-lv-cqe"/>
+                            <constraint firstItem="txk-vL-sXv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="bJI-dC-gpQ"/>
+                            <constraint firstItem="Wka-do-fHU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="dBP-T1-84d"/>
+                            <constraint firstItem="JMi-dx-zIw" firstAttribute="leading" secondItem="Q42-4B-Auh" secondAttribute="trailing" id="dMf-aj-yb3"/>
+                            <constraint firstItem="oYu-Vo-KSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="dY5-a9-PTF"/>
+                            <constraint firstItem="z8z-VW-rbe" firstAttribute="top" secondItem="L9M-wN-Api" secondAttribute="bottom" constant="15" id="dzZ-p9-20f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VfG-PR-oIT" secondAttribute="trailing" constant="6" id="eQ1-9Z-ExY"/>
+                            <constraint firstItem="bhq-2G-5iA" firstAttribute="top" secondItem="9iM-zI-NKS" secondAttribute="bottom" constant="19" id="ef7-RZ-94h"/>
+                            <constraint firstItem="stX-Qh-9fm" firstAttribute="top" secondItem="A3G-J4-G7B" secondAttribute="bottom" constant="19" id="fS3-kD-P5x"/>
+                            <constraint firstItem="CO7-JQ-0s3" firstAttribute="leading" secondItem="Wka-do-fHU" secondAttribute="trailing" constant="8" id="g3V-5S-CDf"/>
+                            <constraint firstItem="txk-vL-sXv" firstAttribute="top" secondItem="oYu-Vo-KSb" secondAttribute="bottom" constant="21" id="gfh-3J-ISh"/>
+                            <constraint firstItem="cyz-cf-jf3" firstAttribute="top" secondItem="Gwe-8x-rki" secondAttribute="bottom" constant="20" id="h0j-IM-aJ2"/>
+                            <constraint firstItem="vol-kT-Qgp" firstAttribute="top" secondItem="Wka-do-fHU" secondAttribute="bottom" constant="21" id="iSu-By-6zF"/>
+                            <constraint firstItem="A3G-J4-G7B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="kF3-Wv-pb4"/>
+                            <constraint firstItem="VfG-PR-oIT" firstAttribute="top" secondItem="cyz-cf-jf3" secondAttribute="bottom" constant="22" id="l27-Ik-rIL"/>
+                            <constraint firstItem="L9M-wN-Api" firstAttribute="leading" secondItem="vol-kT-Qgp" secondAttribute="trailing" constant="67" id="mMf-ps-aoe"/>
+                            <constraint firstItem="Gwe-8x-rki" firstAttribute="leading" secondItem="z8z-VW-rbe" secondAttribute="trailing" constant="5" id="nWg-ww-KfG"/>
+                            <constraint firstItem="oYu-Vo-KSb" firstAttribute="top" secondItem="cyz-cf-jf3" secondAttribute="bottom" constant="22" id="oAH-jw-Ju1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A3G-J4-G7B" secondAttribute="trailing" constant="15" id="qC1-bO-jKR"/>
+                            <constraint firstItem="z8z-VW-rbe" firstAttribute="leading" secondItem="cAC-AO-7UE" secondAttribute="trailing" constant="48" id="qdm-AK-KFm"/>
+                            <constraint firstItem="Wka-do-fHU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="rUA-Or-CYt"/>
+                            <constraint firstItem="CO7-JQ-0s3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="v3q-Zf-fkk"/>
+                            <constraint firstItem="vol-kT-Qgp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vj9-Ha-dP1"/>
+                            <constraint firstItem="BSy-l4-axu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vxJ-ZR-Ecs"/>
+                            <constraint firstItem="bhq-2G-5iA" firstAttribute="leading" secondItem="txk-vL-sXv" secondAttribute="trailing" constant="50" id="wTm-lX-Yoy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="Tdd-gx-NgU">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" springLoaded="YES" style="done" id="mqu-RK-Gvf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="SJv-5p-SHV" kind="show" id="uBo-e4-K0x"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="splitLabel" destination="sGB-SH-y9E" id="Ses-jg-xba"/>
+                        <outlet property="splitSlider" destination="bhq-2G-5iA" id="A1e-KJ-u2x"/>
+                        <outlet property="splitTotalLab" destination="JMi-dx-zIw" id="8C9-lb-df2"/>
+                        <outlet property="textfield" destination="A3G-J4-G7B" id="OzC-fI-i3m"/>
+                        <outlet property="tipLabel" destination="stX-Qh-9fm" id="uNW-eZ-pgU"/>
+                        <outlet property="tipPerLabel" destination="VfG-PR-oIT" id="QKY-X0-OYg"/>
+                        <outlet property="tipPercentSlider" destination="9iM-zI-NKS" id="2cR-QO-SQO"/>
+                        <outlet property="totalLabel" destination="Gwe-8x-rki" id="kGl-9Q-Gk6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="96"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="rH5-Ot-xxI">
+            <objects>
+                <viewController id="SJv-5p-SHV" customClass="SettingsViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="s4Z-he-49Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ids-62-u7l">
+                                <rect key="frame" x="97" y="76" width="255" height="31"/>
+                                <color key="tintColor" red="0.59607843140000005" green="0.98431372549999996" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="defTipSliderValueChanged:" destination="SJv-5p-SHV" eventType="valueChanged" id="Bot-EW-koT"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Split" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6F-tM-Nok">
+                                <rect key="frame" x="30" y="158" width="137" height="25"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="8fE-GI-9zD">
+                                <rect key="frame" x="97" y="204" width="255" height="31"/>
+                                <color key="tintColor" red="0.59607843140000005" green="0.98431372549999996" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="defSplitSliderValueChanged:" destination="SJv-5p-SHV" eventType="valueChanged" id="gvU-oL-zlG"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSt-oM-kuy">
+                                <rect key="frame" x="30" y="75" width="64" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="kbd-hY-5gE"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="yf8-VL-dpe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QS-gh-0Gc">
+                                <rect key="frame" x="30" y="203" width="64" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="FSD-q6-FBy"/>
+                                    <constraint firstAttribute="height" constant="33" id="lsU-9m-rTa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip %" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGm-DR-uWQ">
+                                <rect key="frame" x="30" y="30" width="168" height="25"/>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5725490196078431" green="0.32549019607843138" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4QS-gh-0Gc" firstAttribute="leading" secondItem="m1P-58-O3S" secondAttribute="leading" constant="30" id="MBh-1M-X1Q"/>
+                            <constraint firstItem="8fE-GI-9zD" firstAttribute="trailing" secondItem="Ids-62-u7l" secondAttribute="trailing" id="PYh-pa-Sw4"/>
+                            <constraint firstItem="m1P-58-O3S" firstAttribute="trailing" secondItem="Ids-62-u7l" secondAttribute="trailing" constant="25" id="QSo-Ha-dMM"/>
+                            <constraint firstItem="u6F-tM-Nok" firstAttribute="top" secondItem="MSt-oM-kuy" secondAttribute="bottom" constant="50" id="Qq2-Ou-gv9"/>
+                            <constraint firstItem="8fE-GI-9zD" firstAttribute="leading" secondItem="4QS-gh-0Gc" secondAttribute="trailing" constant="5" id="RMQ-oc-uYK"/>
+                            <constraint firstItem="8fE-GI-9zD" firstAttribute="top" secondItem="u6F-tM-Nok" secondAttribute="bottom" constant="21" id="SGB-Jp-OpQ"/>
+                            <constraint firstItem="MSt-oM-kuy" firstAttribute="top" secondItem="eGm-DR-uWQ" secondAttribute="bottom" constant="20" id="WN3-uO-skN"/>
+                            <constraint firstItem="m1P-58-O3S" firstAttribute="trailing" secondItem="Ids-62-u7l" secondAttribute="trailing" constant="25" id="XeB-aP-gtL"/>
+                            <constraint firstItem="m1P-58-O3S" firstAttribute="trailing" secondItem="u6F-tM-Nok" secondAttribute="trailing" constant="208" id="YCZ-is-JyJ"/>
+                            <constraint firstItem="Ids-62-u7l" firstAttribute="leading" secondItem="MSt-oM-kuy" secondAttribute="trailing" constant="5" id="bvR-QJ-TQF"/>
+                            <constraint firstItem="eGm-DR-uWQ" firstAttribute="top" secondItem="m1P-58-O3S" secondAttribute="top" constant="30" id="c7S-Qx-3Kv"/>
+                            <constraint firstItem="eGm-DR-uWQ" firstAttribute="leading" secondItem="m1P-58-O3S" secondAttribute="leading" constant="30" id="ce1-Zq-OA0"/>
+                            <constraint firstItem="m1P-58-O3S" firstAttribute="trailing" secondItem="eGm-DR-uWQ" secondAttribute="trailing" constant="177" id="oHt-6R-1Eb"/>
+                            <constraint firstItem="MSt-oM-kuy" firstAttribute="leading" secondItem="m1P-58-O3S" secondAttribute="leading" constant="30" id="pco-X3-VTT"/>
+                            <constraint firstItem="Ids-62-u7l" firstAttribute="top" secondItem="eGm-DR-uWQ" secondAttribute="bottom" constant="21" id="r2i-Ob-wiv"/>
+                            <constraint firstItem="4QS-gh-0Gc" firstAttribute="top" secondItem="u6F-tM-Nok" secondAttribute="bottom" constant="20" id="yX6-b1-FYs"/>
+                            <constraint firstItem="u6F-tM-Nok" firstAttribute="leading" secondItem="m1P-58-O3S" secondAttribute="leading" constant="30" id="yxN-aX-ur3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m1P-58-O3S"/>
+                    </view>
+                    <connections>
+                        <outlet property="defSplitLabel" destination="4QS-gh-0Gc" id="iQw-UP-WaO"/>
+                        <outlet property="defTipLabel" destination="MSt-oM-kuy" id="o3v-4F-ely"/>
+                        <outlet property="defaultSplitSlider" destination="8fE-GI-9zD" id="C70-1z-Eo8"/>
+                        <outlet property="defaultTipSlider" destination="Ids-62-u7l" id="AnA-fU-KPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60C-h6-CrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9TY-Eh-PE2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OzI-oX-c4p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="8ro-Tg-n9d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.46666666670000001" green="0.16078431369999999" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Rdd-8K-ye7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ip-3g-cOO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="87"/>
+        </scene>
+    </scenes>
+</document>
