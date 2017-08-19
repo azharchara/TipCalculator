@@ -1,4 +1,4 @@
-# Pre-work - Tip Calculator
+﻿# Pre-work - Tip Calculator
 
 Tip Calculator is a tip calculator application for iOS. 
 
@@ -21,7 +21,7 @@ The following  features are implemented:
 
 ## Video Walkthrough Here's a walkthrough of implemented user stories: 
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video_Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='https://github.com/azharchara/TipCalculator/blob/master/Video_Walkthrough.gif' title='Video_Walkthrough' width='' alt='Video Walkthrough' /> 
 
 GIF created with [LiceCap]
 (http://www.cockos.com/licecap/). 
