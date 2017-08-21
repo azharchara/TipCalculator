@@ -10,21 +10,21 @@ Time spent: 5 hours spent in total
 
 The following functionality is complete: 
 
-* [ ] User can enter a bill amount, choose a tip percentage, choose the number of person between which the amount has to split and see the tip, total values & split value of each individual. 
-* [ ] Settings page to change the default tip percentage & default split. 
+* [x] User can enter a bill amount, choose a tip percentage, choose the number of person between which the amount has to split and see the tip, total values & split value of each individual. 
+* [x] Settings page to change the default tip percentage & default split. 
 
 The following  features are implemented: 
-* [ ] UI animations to some extend 
-* [ ] Remembering the bill amount across app restarts
-* [ ] Making sure the keyboard is visible when touched in textField and resign when touched elsewhere. Just launch the app touch in textField and start typing. 
-* [ ] App is made with a simple design and attractive colours for user friendliness.
+* [x] UI animations to some extend 
+* [x] Remembering the bill amount across app restarts
+* [x] Making sure the keyboard is visible when touched in textField and resign when touched elsewhere. Just launch the app touch in textField and start typing. 
+* [x] App is made with a simple design and attractive colours for user friendliness.
 
-## Video Walkthrough Here's a walkthrough of implemented user stories: 
+## Video Walkthrough: 
 
-<img src='https://github.com/azharchara/TipCalculator/blob/master/Video_Walkthrough.gif' title='Video_Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='https://github.com/azharchara/TipCalculator/blob/master/Video_Walkthrough.gif' title='Video_Walkthrough' width='' alt='Video Walkthrough' /> ## 
 
 GIF created with [LiceCap]
-(http://www.cockos.com/licecap/). 
+[http://www.cockos.com/licecap/]. 
 
 ## Project Analysis 
 
